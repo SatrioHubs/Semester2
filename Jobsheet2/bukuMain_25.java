@@ -14,8 +14,8 @@ public class bukuMain_25 {
         bk1.gantiHarga(60000);
         bk1.tampilinformasi();
 
-        buku_25 bk2 = new buku_25("Self Reward", "Maheera Ayesha", 160, 29, 59000);
-        bk2.terjual(11);
-        bk2.tampilinformasi();
+        buku_25 satrio = new buku_25("Self Reward", "Maheera Ayesha", 160, 29, 59000);
+        satrio.terjual(11);
+        satrio.tampilinformasi();
     }
 }
