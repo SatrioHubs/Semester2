@@ -14,8 +14,12 @@ public class bukuMain_25 {
         bk1.gantiHarga(60000);
         bk1.tampilinformasi();
 
-        buku_25 satrio = new buku_25("Self Reward", "Maheera Ayesha", 160, 29, 59000);
-        satrio.terjual(11);
+        buku_25 satrio = new buku_25("Self Reward", "Maheera Ayesha", 160, 29, 75000);
+        satrio.terjual(4);
         satrio.tampilinformasi();
+        satrio.hargaTotal = satrio.hitungHargaTotal(satrio.jum);
+        satrio.totalDiskon = satrio.hitungDiskon();
+        System.out.println(satrio.hitungHargaBayar());
+        
     }
 }

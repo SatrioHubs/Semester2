@@ -3,7 +3,7 @@ package Jobsheet2;
 public class buku_25 {
 
     String judul, pengarang;
-    int halaman, stock, harga;
+    int halaman, stock, harga, hargaTotal, totalDiskon, hargaBayar, jum;
 
     void tampilinformasi(){
         System.out.println("Judul: " + judul);
@@ -19,6 +19,7 @@ public class buku_25 {
         } else if (stock < jml) {
             System.out.println("Stock Tidak Tersedia");
         } else{
+            jum = jml;
             stock -= jml;
         }
     }
@@ -40,6 +41,24 @@ public class buku_25 {
     }
 
     public buku_25() {
+    }
+
+    int hitungHargaTotal(int jml){
+        return jml * harga; 
+    }
+
+    int hitungDiskon(){
+        if (hargaTotal > 150000) {
+        return (int)(hargaTotal * 0.12);
+        } else if (hargaTotal >= 75000) {
+            return (int)(hargaTotal * 0.5);
+        } else{
+            return 0;
+        }
+    }
+
+    int hitungHargaBayar(){
+       return hargaTotal - totalDiskon;
     }
     
 }
