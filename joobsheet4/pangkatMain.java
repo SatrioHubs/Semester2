@@ -29,6 +29,7 @@ public class pangkatMain {
             png[i].pangkat = pangkat;
             png[i] = new pangkat(nilai, pangkat);
         }
+        
 
         System.out.println("Hasil - BRUTE FORCE");
         for (int i = 0; i < element; i++) {
