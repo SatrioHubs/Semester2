@@ -18,8 +18,9 @@ public class SLLMain {
         singLL.insertAtt(3, 833);
         singLL.print();
 
-        System.out.println("Data berada pada index ke- " + singLL.getData(1));
+        System.out.println("Data pada index ke-1 " + singLL.getData(1));
         System.out.println("Data 3 berada pada index ke- " + singLL.indexOf(760));
+
 
         singLL.remove(999);
         singLL.print();
@@ -29,5 +30,6 @@ public class SLLMain {
         singLL.print();
         singLL.removeLast();
         singLL.print();
+
     }
 }
